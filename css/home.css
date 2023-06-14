@@ -40,13 +40,19 @@ html, body {
 }
 
 .intro_bg {
+  display:flex;
   position: relative;
   background-image: url("../image/intro.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center 60%;
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
+  max-width: 100%;
+  /* max-height: 100%; */
+  max-height: 110vh;
+  height: 102vh;
+  /* height: 1000px; */
 }
 
 .header {
@@ -81,10 +87,13 @@ html, body {
 /* main_text0 */
 
 .main_text0 {
+  display: flex;
   width: 100%;
-  height: 601px;
+  /* height: 601px; */
+  height: 400px;
   margin-top: -12px;
   background: #f1f2f3;
+  position: relative;
 }
 
 .main_text0>h1 {
@@ -93,9 +102,13 @@ html, body {
 
 .icons {
   display: flex;
-  width: 1280px;
+  /* width: 1280px; */
+  width: 100%;
+  /* width: auto; */
   height: 302px;
-  margin: auto;
+  margin: 50;
+  /* position: absolute; */
+  top: 50%;
 }
 
 .icons>li {
