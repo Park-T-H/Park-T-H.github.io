@@ -39,20 +39,22 @@ body {
     color: skyblue;
 }
 
-.nav > li {
+.nav>li {
     margin-left: 84px;
 }
 
 .vertical-menu {
     background-color: #f1f2f3;
     height: 100vh;
-    width: 120px; /* Adjusted width */
+    width: 120px;
+    /* Adjusted width */
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Adjusted spacing */
+    justify-content: space-between;
+    /* Adjusted spacing */
 }
 
 .vertical-menu a {
@@ -116,60 +118,60 @@ body {
 
 @media screen and (max-width: 768px) {
     .nav {
-      width: 100%;
-      justify-content: center;
+        width: 100%;
+        justify-content: center;
     }
-  
+
     .nav>li {
-      margin-left: 30px;
+        margin-left: 30px;
     }
-  
+
     .vertical-menu {
-      width: 100%;
+        width: 100%;
     }
-  
+
     #chartContainer {
-      width: 100%;
-      height: 400px;
+        width: 100%;
+        height: 400px;
     }
-  
+
     #weightChart {
-      margin: 50px 20px 0px 0px;
+        margin: 50px 20px 0px 0px;
     }
-  
+
     #dataEntry {
-      flex-direction: column;
-      margin-top: 40px;
-      margin-bottom: 20px;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
-  
+
     #dataEntry input[type="date"],
     #dataEntry input[type="number"] {
-      width: 80%;
-      margin: 5px 0;
+        width: 80%;
+        margin: 5px 0;
     }
-  
+
     #input-container {
-      margin-top: 20px;
+        margin-top: 20px;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .nav {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .nav li {
-      margin: 5px 0;
+        margin: 5px 0;
     }
-  
+
     #chartContainer {
-      margin-top: 20px;
-      padding: 5px;
+        margin-top: 20px;
+        padding: 5px;
     }
-  
+
     #weightChart {
-      margin: 0;
+        margin: 0;
     }
-  }
+}

@@ -54,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // 그래프 업데이트
     function updateChart() {
+      weightData.sort(function (a, b) {
+        return new Date(a.date) - new Date(b.date);
+      });
       dates = weightData.map(function (data) {
         return data.date;
       });
@@ -80,7 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (index === -1) {
         // 날짜가 중복되지 않을 때만 데이터 추가
         weightData.push({ date: date, weight: weight });
-  
+        
+        // weightData.sort(date);
+
         // 그래프 업데이트
         updateChart();
   
@@ -142,4 +147,3 @@ document.addEventListener("DOMContentLoaded", function () {
     chartContainer.style.display = "block";
     window.scrollTo(0, document.body.scrollHeight);
   }
-  
