@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/exercise.css">
     <link rel="stylesheet" href="./css/tier.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>측정</title>
 </head>
 
@@ -56,27 +57,23 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/exercise.js"></script>
     <script src="./js/tier.js"></script>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="../js/exercise.js"></script>
-<script src="../js/tier.js"></script>
-<script>
-    function showGraph() {
-        var chartContainer = document.getElementById("chartContainer");
-        var tierContainer = document.getElementById("tierContainer");
-        chartContainer.style.display = "block";
-        tierContainer.style.display = "none";
-        window.scrollTo(0, document.body.scrollHeight);
-    }
+    <script>
+        function showGraph() {
+            var chartContainer = document.getElementById("chartContainer");
+            var tierContainer = document.getElementById("tierContainer");
+            chartContainer.style.display = "block";
+            tierContainer.style.display = "none";
+            window.scrollTo(0, document.body.scrollHeight);
+        }
 
-    function showTier() {
-        var chartContainer = document.getElementById("chartContainer");
-        var tierContainer = document.getElementById("tierContainer");
-        chartContainer.style.display = "none";
-        tierContainer.style.display = "block";
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-</script>
+        function showTier() {
+            var chartContainer = document.getElementById("chartContainer");
+            var tierContainer = document.getElementById("tierContainer");
+            chartContainer.style.display = "none";
+            tierContainer.style.display = "block";
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
 </body>
 
 </html>
