@@ -1,0 +1,115 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #f1f2f3;
+}
+
+.result {
+    font-size: 24px;
+}
+
+.banner {
+    color: #00ff0000;
+}
+
+.header {
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0.5%;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 340px;
+    line-height: 86px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav li a:hover {
+    color: skyblue;
+}
+
+.nav > li {
+    margin-left: 84px;
+}
+
+.vertical-menu {
+    background-color: #f1f2f3;
+    height: 100vh;
+    width: 120px; /* Adjusted width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusted spacing */
+}
+
+.vertical-menu a {
+    color: black;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+
+.vertical-menu a:hover {
+    background-color: #555555;
+}
+
+
+#weightChart {
+    margin: 100px 50px 0px 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chartContainer {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    /* top: 40px; */
+    /* margin: 50px; */
+}
+
+#dataEntry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#dataEntry input[type="date"],
+#dataEntry input[type="number"] {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#dataEntry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}

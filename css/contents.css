@@ -1,0 +1,64 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: #f1f2f3;
+}
+
+.result {
+  font-size: 24px;
+}
+
+.banner {
+  color: #00ff0000;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  width: 340px;
+  line-height: 86px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  color: skyblue;
+}
+
+
+.nav>li {
+  margin-left: 84px;
+}
+
+/** section 영역이 header영역과 겹치지 않도록 속성 값 초기화  */
+section {
+  position: relative;
+  margin: 10%;
+  top: 20%;
+  left: 2%;
+}
+
+#grid {
+  display: grid;
+  /** 블럭을 그리드 형식으로 선언 */
+  grid-template-columns: 1fr 1fr 1fr;
+  /** 그리드 하나의 행을 동일한 크기를 갖는 3개의 영역으로 나눔*/
+}
+
+span {
+  padding: 0px 5px;
+}
+

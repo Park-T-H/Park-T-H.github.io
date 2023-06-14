@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/exercise.css">
+    <link rel="stylesheet" href="./css/tier.css">
+    <title>측정</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="banner">
+            <div class="header">
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="exercise.html">EXERCISE</a></li>
+                    <li><a href="diet.html">DIET</a></li>
+                    <li><a href="contents.html">CONTENTS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="vertical-menu">
+            <a href="javascript:void(0);" onclick="showGraph()">체중변화<br>그래프</a>
+            <a href="javascript:void(0);" onclick="showTier()">3대측정</a>
+        </div>
+    </div>
+
+    <div id="chartContainer" style="display: none;">
+        <canvas id="weightChart"></canvas>
+
+        <div id="dataEntry">
+            <input type="date" id="dateInput" placeholder="날짜 선택">
+            <input type="number" id="weightInput" placeholder="체중 입력">
+            <button id="addDataButton">데이터 추가</button>
+            <button id="removeDataButton">데이터 삭제</button>
+            <button id="deleteAllDataButton">전체 삭제</button>
+        </div>
+    </div>
+
+    <div id="tierContainer" style="display: none;">
+        <h1>3대 측정</h1>
+        <div id="input-container">
+            <input id="num1" type="number" placeholder="벤치프레스">
+            <input id="num2" type="number" placeholder="스쿼트">
+            <input id="num3" type="number" placeholder="데드리프트">
+            <button onclick="calculate()">측정하기</button>
+        </div>
+        <p id="result"></p>
+        <div id="image-container" style="display: none;">
+            <img id="image" src="" alt="결과에 따른 이미지"><br>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/exercise.js"></script>
+    <script src="./js/tier.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/exercise.js"></script>
+<script src="../js/tier.js"></script>
+<script>
+    function showGraph() {
+        var chartContainer = document.getElementById("chartContainer");
+        var tierContainer = document.getElementById("tierContainer");
+        chartContainer.style.display = "block";
+        tierContainer.style.display = "none";
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function showTier() {
+        var chartContainer = document.getElementById("chartContainer");
+        var tierContainer = document.getElementById("tierContainer");
+        chartContainer.style.display = "none";
+        tierContainer.style.display = "block";
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+</body>
+
+</html>

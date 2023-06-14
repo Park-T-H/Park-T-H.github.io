@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 1px 15px;
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
